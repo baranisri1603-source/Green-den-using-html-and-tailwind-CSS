@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GreenDen for plant care help, product questions, and recommendations for your home.">
+    <meta name="theme-color" content="#f5f8f2">
+    <title>Contact | GreenDen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="site-header sticky top-0 z-20 border-b border-green-100">
+        <div class="page-shell flex h-20 items-center justify-between">
+            <a class="brand flex items-center text-2xl font-bold" href="./index.html" aria-label="GreenDen home"><span class="brand-mark mr-2" aria-hidden="true">❧</span>GreenDen<span class="brand-dot">.</span></a>
+            <nav class="hidden items-center space-x-8 md:flex" aria-label="Main navigation">
+                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="./products.html">Products</a>
+                <a class="nav-link" href="./contact.html" aria-current="page">Contact</a>
+            </nav>
+            <a class="button-primary hidden px-5 py-3 text-sm md:inline-flex" href="mailto:hello@greenden.example">Email GreenDen</a>
+            <button class="menu-button rounded p-2 text-gray-700 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-700 md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+                <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu border-t border-green-100 bg-white px-6 py-3 md:hidden" aria-label="Mobile navigation" hidden>
+            <a class="mobile-nav-link" href="./index.html">Home</a>
+            <a class="mobile-nav-link" href="./products.html">Products</a>
+            <a class="mobile-nav-link" href="./contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="page-shell py-14 text-center md:py-20">
+                <p class="eyebrow mb-3">We're happy to help</p>
+                <h1 class="section-title font-bold">Let's talk plants.</h1>
+                <p class="mx-auto mt-4 max-w-xl leading-7 text-gray-600">Looking for a plant recommendation or need a little care advice? Send us a note and tell us how we can help.</p>
+            </div>
+        </section>
+
+        <section class="page-shell grid gap-10 py-12 md:grid-cols-5 md:gap-14 md:py-16">
+            <div class="md:col-span-2">
+                <p class="eyebrow mb-3">Get in touch</p>
+                <h2 class="text-2xl font-bold text-green-900">A friendly hello goes a long way.</h2>
+                <p class="mt-4 leading-7 text-gray-600">Our team can help you choose a plant for your space, answer care questions, or point you in the right direction.</p>
+
+                <div class="mt-8 space-y-6">
+                    <div class="flex gap-4">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        </span>
+                        <div><h3 class="font-semibold text-gray-900">Email</h3><a class="mt-1 inline-block text-sm text-green-800 hover:underline" href="mailto:hello@greenden.example">hello@greenden.example</a><p class="mt-1 text-xs text-gray-500">Sample address; replace with your business email.</p></div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        </span>
+                        <div><h3 class="font-semibold text-gray-900">Opening hours</h3><p class="mt-1 text-sm text-gray-600">Monday – Saturday, 9:00 AM – 6:00 PM</p><p class="mt-1 text-xs text-gray-500">Sunday: taking a little time to grow.</p></div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div><h3 class="font-semibold text-gray-900">Our little corner</h3><p class="mt-1 text-sm text-gray-600">A neighborhood plant shop, wherever you are.</p><p class="mt-1 text-xs text-gray-500">Add your store address here.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card md:col-span-3">
+                <h2 class="text-2xl font-bold text-green-900">Send us a message</h2>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Fill in the details below and we'll be ready to help.</p>
+                <form id="contact-form" class="mt-7 space-y-5">
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <div>
+                            <label class="form-label" for="name">Your name</label>
+                            <input class="form-input" id="name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="email">Email address</label>
+                            <input class="form-input" id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label" for="subject">What can we help with?</label>
+                        <select class="form-input" id="subject" name="subject" required>
+                            <option value="">Choose a topic</option>
+                            <option>Choosing a plant</option>
+                            <option>Plant care advice</option>
+                            <option>Product question</option>
+                            <option>Something else</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label" for="message">Your message</label>
+                        <textarea class="form-input" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="button-primary px-6 py-3" type="submit">Prepare message <span class="ml-2" aria-hidden="true">&rarr;</span></button>
+                    <p id="form-status" class="text-sm text-gray-600" role="status" aria-live="polite">Demo form: submitting opens your email app; it does not send or store your message.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell flex flex-col justify-between gap-5 py-8 md:flex-row md:items-center">
+            <a class="brand flex items-center text-xl font-bold text-white" href="./index.html"><span class="brand-mark mr-2" aria-hidden="true">❧</span>GreenDen<span class="brand-dot">.</span></a>
+            <p class="text-sm text-gray-400">Thoughtful plants for a home that feels alive.</p>
+            <p class="text-xs text-gray-500">&copy; <span data-current-year></span> GreenDen</p>
+        </div>
+    </footer>
+</body>
+</html>

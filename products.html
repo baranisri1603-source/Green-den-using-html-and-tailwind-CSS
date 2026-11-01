@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop easy-care houseplants and find the right green companion for your home.">
+    <meta name="theme-color" content="#f5f8f2">
+    <title>Products | GreenDen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="site-header sticky top-0 z-20 border-b border-green-100">
+        <div class="page-shell flex h-20 items-center justify-between">
+            <a class="brand flex items-center text-2xl font-bold" href="./index.html" aria-label="GreenDen home"><span class="brand-mark mr-2" aria-hidden="true">❧</span>GreenDen<span class="brand-dot">.</span></a>
+            <nav class="hidden items-center space-x-8 md:flex" aria-label="Main navigation">
+                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="./products.html" aria-current="page">Products</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </nav>
+            <a class="button-primary hidden px-5 py-3 text-sm md:inline-flex" href="./contact.html">Ask us a question</a>
+            <button class="menu-button rounded p-2 text-gray-700 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-700 md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+                <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu border-t border-green-100 bg-white px-6 py-3 md:hidden" aria-label="Mobile navigation" hidden>
+            <a class="mobile-nav-link" href="./index.html">Home</a>
+            <a class="mobile-nav-link" href="./products.html" aria-current="page">Products</a>
+            <a class="mobile-nav-link" href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="page-shell py-14 text-center md:py-20">
+                <p class="eyebrow mb-3">A good place to grow</p>
+                <h1 class="section-title font-bold">Find your kind of green.</h1>
+                <p class="mx-auto mt-4 max-w-xl leading-7 text-gray-600">Browse our collection of easy-care favorites and leafy statement plants. Every pick comes with simple care tips to help it feel at home.</p>
+            </div>
+        </section>
+
+        <section class="page-shell py-12 md:py-16" aria-labelledby="products-heading">
+            <div class="mb-8 flex flex-wrap items-end justify-between gap-3">
+                <div><p class="eyebrow mb-2">The GreenDen collection</p><h2 id="products-heading" class="text-2xl font-bold text-green-900">Plants for every space</h2></div>
+                <p class="text-sm text-gray-500">A few favorites to get you started</p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80" alt="Sunlit green leaves of a houseplant" loading="lazy">
+                    <div class="p-5"><p class="product-label">Easy care</p><h3 class="mt-1 text-xl font-bold">Golden Pothos</h3><p class="mt-2 text-sm text-gray-600">A cheerful trailing plant that brightens up shelves and sunny corners.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$24.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=700&q=80" alt="Lush monstera leaves" loading="lazy">
+                    <div class="p-5"><p class="product-label">Statement plant</p><h3 class="mt-1 text-xl font-bold">Monstera Deliciosa</h3><p class="mt-2 text-sm text-gray-600">Distinctive split leaves bring a little tropical character indoors.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$38.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=80" alt="A small succulent in a pot" loading="lazy">
+                    <div class="p-5"><p class="product-label">Low maintenance</p><h3 class="mt-1 text-xl font-bold">Sunday Succulent</h3><p class="mt-2 text-sm text-gray-600">A compact sun-lover that's just right for a bright desk or sill.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$16.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=80" alt="Tropical houseplant with lush green foliage" loading="lazy">
+                    <div class="p-5"><p class="product-label">Customer favorite</p><h3 class="mt-1 text-xl font-bold">Bird of Paradise</h3><p class="mt-2 text-sm text-gray-600">A bold leafy companion that brings a warm, tropical feel.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$45.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=700&q=80" alt="Potted green plants gathered in a home" loading="lazy">
+                    <div class="p-5"><p class="product-label">Easy care</p><h3 class="mt-1 text-xl font-bold">Peace Lily</h3><p class="mt-2 text-sm text-gray-600">Elegant deep-green leaves for a calm, softly lit space.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$29.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+                <article class="product-card">
+                    <img class="product-image" src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=80" alt="Small textured succulent plant" loading="lazy">
+                    <div class="p-5"><p class="product-label">Small space</p><h3 class="mt-1 text-xl font-bold">Little Jade</h3><p class="mt-2 text-sm text-gray-600">A sweet, sturdy succulent for a bright windowsill.</p><div class="mt-4 flex items-center justify-between"><span class="font-semibold text-green-800">$18.00</span><a class="product-link" href="./contact.html">Ask about this plant <span aria-hidden="true">&rarr;</span></a></div></div>
+                </article>
+            </div>
+        </section>
+        <section class="bg-gray-50 py-12">
+            <div class="page-shell flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+                <div><h2 class="text-2xl font-bold text-green-900">Not sure what will thrive?</h2><p class="mt-2 text-sm text-gray-600">Tell us about your space and we'll help you find a good fit.</p></div>
+                <a class="button-primary px-6 py-3" href="./contact.html">Talk to our team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell flex flex-col justify-between gap-5 py-8 md:flex-row md:items-center">
+            <a class="brand flex items-center text-xl font-bold text-white" href="./index.html"><span class="brand-mark mr-2" aria-hidden="true">❧</span>GreenDen<span class="brand-dot">.</span></a>
+            <p class="text-sm text-gray-400">Thoughtful plants for a home that feels alive.</p>
+            <p class="text-xs text-gray-500">&copy; <span data-current-year></span> GreenDen</p>
+        </div>
+    </footer>
+</body>
+</html>
